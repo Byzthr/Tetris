@@ -38,8 +38,6 @@ class Procesador():
         self.dt_ns          = dt*1e9
         self.conteo         = self.dt_ns
 
-        print('JUGANDO')
-
         self.resultado      = self.bucle_principal()
                     
         self.game_over()
@@ -135,8 +133,6 @@ class Procesador():
 
     
     def game_over(self):
-
-        print('GAMEOVER')
 
         self.master.mainloop()
 

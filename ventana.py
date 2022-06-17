@@ -15,6 +15,7 @@ class Master(Tk):
         
         self.color_fondo = 'sky blue'
 
+        self.iconbitmap('tetris.ico')
         self.title('TETRIS')
         self.resizable(False,False)
 
@@ -79,7 +80,7 @@ class FrameMarcador(Frame):
 
         super().__init__(master, bg=self.color_fondo, width=250, height=100)
 
-        rotulo              = Label(self, text='PUNTOS:',   font=('Verdana', 24, BOLD), bg=self.color_fondo)
+        rotulo              = Label(self, text='POINTS:',   font=('Verdana', 24, BOLD), bg=self.color_fondo)
         self.puntos_label   = Label(self, text=0,           font=('Verdana', 24, BOLD), bg=self.color_fondo)
         rotulo.place(relx=.5, rely=.2, anchor=CENTER)
         self.puntos_label.place(relx=.5, rely=.7, anchor=CENTER)

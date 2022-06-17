@@ -5,8 +5,6 @@ def main():
 
     juego = Procesador()
 
-    # input('Press a key too close')
-
     return 0
 
 if __name__=='__main__':
